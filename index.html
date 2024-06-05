@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regxi S.A | Servicios Informáticos</title>
+</head>
+<body>
+    <noscript>
+        <style>
+            html {
+            display: none;
+            }
+        </style>
+        <meta http-equiv="refresh" content="0; url=/en" />
+    </noscript>
+    <script>
+        const localeKey = 'storedLocale'
+        const storedLocale = localStorage.getItem(localeKey)
+
+        if (storedLocale) {
+            window.location.href = `/${storedLocale}`
+        } else {
+            const userLang = navigator.language || navigator.userLanguage
+            const lang = userLang.split('-')[0]
+            const locale = lang === 'es' ? 'es' : 'en'
+            localStorage.setItem(localeKey, locale)
+            window.location.href = `/${locale}`
+        }
+    </script>
+</body>
+</html>

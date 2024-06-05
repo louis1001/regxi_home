@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/assets/styles/base.css" />
+        <link rel="stylesheet" href="/assets/styles/home.css" />
+
+        <title>Regxi S.A. | IT Services</title>
+
+        <script>
+            function setLocale(locale) {
+                const localeKey = 'storedLocale'
+                localStorage.setItem(localeKey, locale)
+            }
+
+            setLocale('en')
+
+            function toggleLanguage() {
+                const locale = 'es'
+                setLocale(locale)
+                window.location.href = `/${locale}`
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img
+                    id="regxi-logo"
+                    src="/assets/images/regxi_logo.png"
+                    alt="Regxi logo"
+                />
+
+                <ul id="nav-items">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#about">About Us</a></li>
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/#customers">Customers</a></li>
+                    <li><a href="/#contact">Contact Us</a></li>
+
+                    <li><a href="javascript:void(0)" onclick="toggleLanguage()">
+                        EN
+                        <img
+                        src="https://flagcdn.com/16x12/us.png"
+                        srcset="https://flagcdn.com/32x24/us.png 2x,
+                          https://flagcdn.com/48x36/us.png 3x"
+                        width="16"
+                        height="12"
+                        alt="United States">
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="hero">
+                <div class="hero-main">
+                    <img src="/assets/images/regxi_square.png" width="350" height="350" alt="Regxi Logo">
+
+                    <h1>We are <span class="regxi-name">Regxi</span> S.A</h1>
+                </div>
+                <div class="text-content">
+                    <h3>
+                        We create, innovate and develop digital products.
+                    </h3>
+                    <p>
+                        Building nice experiences and automating ideas that
+                        are the right fit for our clients while implementing
+                        the best methods of Web and mobile development
+                    </p>
+                </div>
+            </section>
+            <section id="about">
+                <div class="about-main">
+                    <aside class="about-image"></aside>
+                    <div class="text-content">
+                        <h3>About Us</h3>
+                        <h2>We are <span class="regxi-name">Regxi</span> S.A</h2>
+                        <p>
+                            Information Technology Services Company which is
+                            focus on developing Web and Mobile applications,
+                            using the newest technologies in the hands of a
+                            highly qualified team trained tp satisfied our
+                            clients needs all around the world, automating your
+                            ideas and guaranteeing the quality of our services.
+                        </p>
+                    </div>
+                </div>
+                <div class="regxi-separator"></div>
+                <aside id="main-perks">
+                    <div class="perk-item">
+                        <img src="/assets/images/hero_experience.png" alt="" />
+                        <h4>More than 10 years of experience</h4>
+                        <p>
+                            Backed by more than 10 years of experience in the IT
+                            field.
+                        </p>
+                    </div>
+    
+                    <div class="perk-item">
+                        <img src="/assets/images/hero_practices.png" alt="" />
+                        <h4>Good practices</h4>
+                        <p>
+                            In each system or application we apply the best
+                            practices recommended by experts.
+                        </p>
+                    </div>
+    
+                    <div class="perk-item">
+                        <img src="/assets/images/hero_improvement.png" alt="" />
+                        <h4>Constant improvement</h4>
+                        <p>
+                            Our collaborators are constantly learning and
+                            renewing their professional skills.
+                        </p>
+                    </div>
+                </aside>
+                <div class="regxi-separator"></div>
+                <div class="about-details">
+                    <div class="about-detail-item">
+                        <h3>Our Values</h3>
+                        <p>
+                            We are committed to bring the best services to our
+                            clients while working as a team, creating good human
+                            relationships and an inspiring and comfortable
+                            environment.
+                        </p>
+                    </div>
+
+                    <div class="about-detail-item">
+                        <h3>Our Mission</h3>
+                        <p>
+                            Guarantee an excellent quality of the services
+                            requested by our clients, providing the best
+                            technological solutions that require a constant
+                            improvement for our company.
+                        </p>
+                    </div>
+
+                    <div class="about-detail-item">
+                        <h3>Our Vision</h3>
+                        <p>
+                            Keep on growing as a company and as far as possible
+                            keep building our own product which will allow us to
+                            compete in the market to be recognize by our work
+                            and innovative professionalism.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="services">
+                <div class="services-main">
+                    <h3>Services</h3>
+                    <h2>What do we offer?</h2>
+
+                    <p>
+                        In each of our services a group of specialists will be
+                        guiding you to the best solution.
+                    </p>
+                    <a href="#" class="main-cta">Email Us</a>
+                </div>
+                <div class="services-list">
+                    <article class="service-item">
+                        <div class="service-image">
+                            <i class="bx bx-mobile-alt"></i>
+                        </div>
+                        <div class="service-text">
+                            <h4>Mobile application development</h4>
+                            <p>
+                                Design and development of apps for smart phones,
+                                tablets or other mobile devices that work with
+                                an IOS or Android system, with the purpose to
+                                keep our clients connected and to help them to
+                                ease specific chores.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-item">
+                        <div class="service-image">
+                            <i class="bx bx-laptop"></i>
+                        </div>
+                        <div class="service-text">
+                            <h4>Web application Development</h4>
+                            <p>
+                                We offer the possibility of Web apps automating
+                                to specifications that our clients propose,
+                                applying the latest web trends and optimization
+                                settings.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-item">
+                        <div class="service-image">
+                            <i class="bx bx-window-alt"></i>
+                        </div>
+                        <div class="service-text">
+                            <h4>Websites</h4>
+                            <p>
+                                We develop manageable websites using WordPress
+                                CMS and using trending layout designers such as
+                                Divi and Elementor.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="clients">
+                <div class="clients-main">
+                    <div class="text-content">
+                        <h3>Our clients</h3>
+                        <h2>Customers</h2>
+
+                        <p>
+                            We provide technological solutions tailored to your
+                            needs.
+                        </p>
+                    </div>
+                    <div class="clients-details">
+                        <ul>
+                            <a href="#">
+                            <li>
+                                <img
+                                    src="/assets/images/innotest_logo.svg"
+                                    alt="InnoTest"
+                                />
+                            </li>
+                            </a>
+                            <a href="#">
+                            <li>
+                                <img
+                                    src="/assets/images/fund_victoria_logo.png"
+                                    alt="Fundación Victoria"
+                                />
+                            </li>
+                            </a>
+                            <a href="#">
+                            <li>
+                                <img
+                                    src="/assets/images/injury_logo.png"
+                                    alt="Injury Institute"
+                                />
+                            </li>
+                            </a>
+                            <a href="#">
+                            <li>
+                                <img
+                                    src="/assets/images/tech_victoria_logo.png"
+                                    alt="Instituto Tecnológico Victoria"
+                                />
+                            </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="contact-main">
+                    <h3>Reach out</h3>
+                    <h2>Contact Us</h2>
+                    <div class="contact-secondary">
+                        <p>
+                            We guide you through out the whole project, looking for
+                            a joint solution.
+                        </p>
+                        <a href="mailto:erick.martinez@regxi.com" class="main-cta"
+                            >Email Us</a
+                        >
+                    </div>
+                </div>
+                <div class="contact-points">
+                    <div class="contact-item">
+                        <i class="bx bxs-phone"></i>
+                        <p>(505) 8989-8944</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bx bx-map-pin"></i>
+                        <p>Granada, Nicaragua</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <span>2021-2024 © Regxi S.A | Todos los Derechos Reservados</span>
+        </footer>
+    </body>
+</html>

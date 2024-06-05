@@ -1,0 +1,242 @@
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: min(90vw, 1400px);
+    margin: 2rem auto;
+     /* debug */
+    /* border: .3rem solid rgba(0, 128, 255, 0.482); */
+    border-radius: 10px;
+    min-height: 75vh;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    height: 100vh;
+    z-index: 1;
+    background-image: url(../images/backdrop_circuit.png);
+    background-size: cover;
+    opacity: 0.1;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: #0B488E;
+    margin: 0;
+}
+
+.regxi-name {
+    font-weight: bold;
+    color: #58C2E2;
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-main img {
+    animation: spinIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#hero .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    padding-right: 14%;
+    text-align: right;
+    z-index: 1;
+}
+
+#hero .text-content h3 {
+    font-size: 2rem;
+    color: #00b4ff;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+#hero .text-content p {
+    color: #666;
+    font-weight: lighter;
+}
+
+#main-perks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-block: 4rem;
+}
+
+#main-perks .perk-item {
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+    animation: slideIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+#main-perks .perk-item img {
+    width: 120px;
+}
+
+#main-perks .perk-item:nth-child(1) {
+    animation-delay: .05s;
+}
+
+#main-perks .perk-item:nth-child(2) {
+    animation-delay: .12s;
+}
+
+#main-perks .perk-item:nth-child(3) {
+    animation-delay: .08s;
+}
+
+.about-main {
+    display: flex;
+}
+
+#about .text-content {
+    max-width: 50%;
+}
+
+#about .about-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.services-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.service-item {
+    color: black;
+    background: white;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    /* neumorphic shadow */
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+.service-item .service-image {
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #03bfc5;
+}
+
+.service-item h4 {
+    margin: 0;
+    text-align: center;
+}
+
+.service-item p {
+    font-weight: lighter;
+}
+
+.clients-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-details ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients-details a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+/* neumorphic background for the li, in the background so it doesn't overlap other cells */
+.clients-details a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    z-index: -1;
+}
+
+#clients img {
+    display: block;
+    width: 300px;
+    border: 1px color red;
+    margin: 0 auto;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 4rem auto;
+}
+
+.contact-points {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.contact-points .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes spinIn {
+    0% {
+        opacity: .1;
+        transform: scale(0.9) rotate(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}

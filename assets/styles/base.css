@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14pt;
+    --header-height: 40px;
+
+    color: #333;
+    font-weight: lighter;
+    font-family: "Overpass", Helvetica, Arial, Lucida, sans-serif;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    background-color: #ffffff64;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+header a {
+    color: unset;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: unset;
+}
+
+.small-icon {
+    aspect-ratio: 1;
+    font-size: 18px;
+}
+
+.top-heading p {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.top-heading p * {
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-inline: 2rem;
+    font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav a {
+    color: #3c51a4;
+}
+
+nav a:visited {
+    color: #3c51a4;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#regxi-logo {
+    height: 20px;
+    /* width: 210px; */
+    object-fit: contain;
+}
+
+#nav-items {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+section {
+    padding: 50px;
+    margin-block: 5rem;
+}
+
+section h3 {
+    margin: 0;
+    padding: 0;
+    color: #22a7cc;
+    font-size: 1.5rem;
+}
+
+section h2 {
+    margin: 0;
+    padding: 0;
+    color: #0B488E;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.regxi-separator {
+    display: block;
+    height: 2px;
+    width: 200px;
+    padding-inline: 1rem;
+    background: #0b488e6c;
+    margin: 2rem auto;
+}
+
+.main-cta {
+    display: inline-block;
+    padding: 20px 25px;
+    background-color: #47d7ff;
+    text-transform: uppercase;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 1000px;
+}
+
+footer {
+    color: #ffffff;
+    background: #222;
+    padding: 1rem;
+}
