@@ -91,7 +91,7 @@ nav a:hover {
 
 section {
     padding: 50px;
-    margin-block: 5rem;
+    margin-block: 3rem;
 }
 
 section h3 {
@@ -133,4 +133,5 @@ footer {
     color: #ffffff;
     background: #222;
     padding: 1rem;
+    font-size: .9rem;
 }

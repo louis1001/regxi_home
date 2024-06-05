@@ -170,7 +170,7 @@
     justify-content: center;
 }
 
-.clients-details a {
+.clients-details li {
     display: flex;
     align-items: center;
     position: relative;
@@ -179,22 +179,9 @@
     border-radius: 20px;
 }
 
-/* neumorphic background for the li, in the background so it doesn't overlap other cells */
-.clients-details a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 20px;
-    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-    z-index: -1;
-}
-
 #clients img {
     display: block;
-    width: 300px;
+    width: 250px;
     border: 1px color red;
     margin: 0 auto;
 }
@@ -211,12 +198,45 @@
     flex-direction: column;
     justify-content: end;
     align-items: end;
+    gap: .8rem;
+}
+
+.contact-points p {
+    margin: 0;
 }
 
 .contact-points .contact-item {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+#testimonials .testimonial-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+#testimonials .testimonial-item {
+    padding: 1rem;
+    border-radius: 20px;
+    border-left: 3px solid #03bfc5;
+    box-shadow: 2px 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-item strong {
+    color: #555;
+}
+
+#testimonials .testimonial-company {
+    color: #999;
+    font-size: .7rem;
+    font-style: italic;
+}
+
+#testimonials blockquote {
+    font-size: .9rem;
 }
 
 @keyframes slideIn {
